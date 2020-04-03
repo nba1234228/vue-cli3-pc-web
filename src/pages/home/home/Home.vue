@@ -1,6 +1,6 @@
 <template>
 	<div class="home">
-        <span class="text">home</span>
+        <span class="text">hello, world</span>
 	</div>
 </template>
 
@@ -22,7 +22,6 @@ export default {
 	.home {
         .text {
             color: red;
-            font-size: 108px;
         }
 	}
 </style>

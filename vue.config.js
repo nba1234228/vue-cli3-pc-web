@@ -1,7 +1,6 @@
 const webpack = require('webpack');
 const path = require('path');
-// const env = require('./src/core/env');
-// import env from './src/core/env';
+const env = require('./src/core/env');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
@@ -26,10 +25,8 @@ const config = {
     },
 	devServer: {
         contentBase: './dist',
-		// host: env.host || '0.0.0.0', // 域名，能被外部访问
-		host:  '0.0.0.0', // 域名，能被外部访问
-		port: 8850, // 端口
-		// port: env.port || 8848, // 端口
+		host: env.host || '0.0.0.0', // 域名，能被外部访问
+		port: env.port || 8848, // 端口
 		disableHostCheck: true, // 不检查hostname
 		open: true, // 自动打开浏览器
         compress: true, // 是否启用gzip压缩
@@ -42,8 +39,7 @@ const config = {
             warnings: true,
             errors: true
         },
-		proxy: {}
-		// proxy: env.proxy || {}
+		proxy: env.proxy || {}
     },
 	plugins:[
 		new VueLoaderPlugin(),

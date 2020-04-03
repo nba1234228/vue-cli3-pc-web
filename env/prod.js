@@ -1,4 +1,4 @@
-export default {
+module.exports = {
     mode: 'prod',
     homePagePath: '/home/home/Home',
     apiPrefixUrl: '/api',

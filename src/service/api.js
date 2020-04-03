@@ -2,7 +2,6 @@ import Vue from 'vue';
 import '@/core/ajax';
 import qs from 'qs';
 const ajax = Vue.prototype.$ajax;
-// const baseUrl = 'http://45bb.nat123.cc:35555';
 const baseUrl = 'http://192.168.0.103:9000';
 const vue = new Vue();
 const urls = {

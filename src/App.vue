@@ -20,6 +20,7 @@ export default {
 </style>
 <style lang="scss" scoped>
     #app{
-        background-color: #ccc;
+        background-color: #fefefe;
+        padding: 20px;
     }
 </style>

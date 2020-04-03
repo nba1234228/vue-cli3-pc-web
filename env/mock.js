@@ -1,4 +1,4 @@
-export default {
+module.exports = {
     mode: 'mock',
     homePagePath: '/home/home/Home',
     apiPrefixUrl: '/api',
